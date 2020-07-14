@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="referrer" content="always">
+        <link rel="canonical" href="/get-started">
+        <meta name="description" content="Website description.">
+        <title>Get Started | PM Library Manager</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=8051050dc83f484f0247">
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </head>
+    <body class="antialiased leading-none text-gray-900 bg-gray-100">
+        <div id="app">
+            <div class="min-h-layout">
+                <header class="bg-white shadow-lg border-t-3 border-primary" x-data="{ isOpen: false }">
+                    <div class="container mx-auto flex justify-betwen items-center flex-col lg:flex-row w-full">
+                        <div class="flex justify-between w-full lg:w-auto">
+                            <div class="flex items-center space-x-3">
+                                <a href="https://prossermedia.co.uk" target="_blank" class="block pl-4 py-3 focus:shadow-outline outline-none">
+                                    <img src="https://res.cloudinary.com/prosser-media-co-u-k/image/upload/v1577046801/logo_dark.png" alt="Prosser Media Logo" class="h-12">
+                                </a>
+                                <a href="/" class="block text-lg py-6 focus:shadow-outline outline-none">
+                                    PM Library Manager
+                                </a>
+                            </div>
+                            <button class="block p-4 lg:hidden focus:shadow-outline outline-none" @click="isOpen = !isOpen" @click.away="isOpen = false">
+                                <svg class="h-8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                            </button>
+                        </div>
+                        <div class="flex flex-col lg:flex-row w-full lg:w-auto lg:flex-1 lg:justify-end lg:imp:flex" x-show="isOpen">
+                            <a href="/" class="block py-3 lg:py-7 text-left px-4 hover:text-primary hover:bg-gray-100 transition duration-200 focus:shadow-outline outline-none">Home</a>
+                            <a href="/features" class="block py-3 lg:py-7 text-left px-4 hover:text-primary hover:bg-gray-100 transition duration-200 focus:shadow-outline outline-none  ">Features</a>
+                            <a href="/documentation" class="block py-3 lg:py-7 text-left px-4 hover:text-primary hover:bg-gray-100 transition duration-200 focus:shadow-outline outline-none  ">Documentation</a>
+                            <a href="/get-started" class="block py-3 my-4 text-center mx-4 lg:mx-0 lg:ml-2 px-4 text-primary border border-primary rounded-md hover:bg-primary hover:text-white transition duration-300 focus:shadow-outline outline-none bg-primary imp:text-white">Get Started</a>
+                        </div>
+                    </div>
+                </header>
+
+                <main>
+                    <h1 class="font-black text-4xl text-primary tracking-tight text-center my-12">Get Started</h1>
+
+<div class="container my-16 px-4 flex flex-col lg:flex-row justify-between">
+    <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <h2 class="font-bold text-2xl text-primary mb-5 border-b border-gray-500 w-48 pb-2 mx-auto lg:mx-0">Get in Touch</h2>
+        <form action="https://formspree.io/xnqgovbg" method="POST">
+            <label for="name" class="block mb-2 text-gray-800">Name:</label>
+            <input type="text" name="name" id="name" class="bg-white rounded-full p-3 block w-full focus:shadow-outline outline-none shadow-lg mb-5" autocomplete="name">
+
+            <label for="email" class="block mb-2 text-gray-800">Email:</label>
+            <input type="email" name="email" id="email" class="bg-white rounded-full p-3 block w-full focus:shadow-outline outline-none shadow-lg mb-5" autocomplete="email">
+
+            <label for="message" class="block mb-2 text-gray-800">Message:</label>
+            <textarea name="message" id="message" class="bg-white p-3 block w-full focus:shadow-outline outline-none shadow-lg mb-5 h-32" style="border-radius: 32px"></textarea>
+
+            <button class="block p-3 w-full text-center bg-primary text-white border border-primary hover:bg-gray-100 hover:text-primary transition duration-300 rounded-full">Send</button>
+        </form>
+    </div>
+    <div class="w-full lg:w-1/2 mb-6 lg:mb-0 lg:ml-6">
+        <h2 class="font-bold text-2xl text-primary mb-5 border-b border-gray-500 w-32 pb-2 mx-auto lg:mx-0">Demo</h2>
+        <p class="leading-normal text-gray-800">Click <a href="#" class="text-primary hover:underline">here</a> for a demo to see if you like the management system. For help, please refer to the <a href="/documentation" class="text-primary hover:underline">documentation</a>.</p>
+        <p class="leading-normal mt-2 text-gray-800">If you try to add, edit or delete, this will not work due to it being a public demo. The email and password will be inputted automatically when trying to login.</p>
+
+        <div class="h-1 w-32 border-b my-6 border-gray-500"></div>
+        <p class="leading-normal text-gray-800">At the moment, you must get in touch to set up your library management system. Please fill in the contact form on this page or <a href="mailto:contact@prossermedia.co.uk" class="text-primary hover:underline">email</a> to get started.</p>
+    </div>
+</div>
+                </main>
+            </div>
+            <footer class="bg-white">
+                <div class="container py-8">
+                    <p class="text-center">Copyright &copy; Prosser Media 2020</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
