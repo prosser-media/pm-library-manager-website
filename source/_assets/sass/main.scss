@@ -1,0 +1,33 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@media (min-width: 1024px) {
+    .lg\:imp\:flex {
+        display: flex !important;
+    }
+
+    .lg\:max-w-2\/3 {
+        max-width: 66%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .w-500 {
+        width: 500px;
+    }
+ }
+
+.min-h-layout {
+    min-height: calc(100vh - 5rem);
+}
+
+.outline-none {
+    outline: none !important;
+}
+
+.imp\:text-white {
+    color: white;
+}
